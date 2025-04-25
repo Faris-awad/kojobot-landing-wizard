@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -30,19 +29,19 @@ const PricingSection = () => {
           <TabsContent value="offline" className="mt-0">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Kojo Squad */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
-                <div className="p-6 bg-gray-50 border-b border-gray-200">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:bg-gradient-to-br hover:from-kojobot-blue hover:to-kojobot-purple hover:text-white group">
+                <div className="p-6 bg-gray-50 border-b border-gray-200 transition-colors group-hover:bg-transparent group-hover:border-white/20">
                   <h3 className="font-bold text-2xl text-center mb-2">Kojo Squad</h3>
-                  <p className="text-gray-500 text-center">٦ إلى ٨ طلاب</p>
+                  <p className="text-gray-500 group-hover:text-white/90 text-center">٦ إلى ٨ طلاب</p>
                 </div>
                 
                 <div className="p-6">
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
                       <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">1700 ج.م</span>
                     </div>
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
                       <span className="font-medium">٣ شهور</span>
                       <span className="font-bold text-lg">3750 ج.م</span>
                     </div>
@@ -51,27 +50,23 @@ const PricingSection = () => {
                       <span className="font-bold text-lg">6600 ج.م</span>
                     </div>
                   </div>
-                  
-                  <Button className="w-full gradient-button">
-                    اشترك الآن
-                  </Button>
                 </div>
               </div>
               
               {/* Kojo Core */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transform scale-105 hover:shadow-xl transition-shadow">
-                <div className="p-6 bg-kojobot-gradient">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transform scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-kojobot-blue hover:to-kojobot-purple hover:text-white group">
+                <div className="p-6 bg-kojobot-gradient transition-colors group-hover:from-white/20 group-hover:to-white/10">
                   <h3 className="font-bold text-2xl text-white text-center mb-2">Kojo Core</h3>
                   <p className="text-white text-center opacity-90">٢ إلى ٣ طلاب</p>
                 </div>
                 
                 <div className="p-6">
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
                       <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">3400 ج.م</span>
                     </div>
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
                       <span className="font-medium">٣ شهور</span>
                       <span className="font-bold text-lg">7500 ج.م</span>
                     </div>
@@ -80,23 +75,19 @@ const PricingSection = () => {
                       <span className="font-bold text-lg">14600 ج.م</span>
                     </div>
                   </div>
-                  
-                  <Button className="w-full gradient-button">
-                    اشترك الآن
-                  </Button>
                 </div>
               </div>
               
               {/* Kojo X */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
-                <div className="p-6 bg-gray-50 border-b border-gray-200">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:bg-gradient-to-br hover:from-kojobot-blue hover:to-kojobot-purple hover:text-white group">
+                <div className="p-6 bg-gray-50 border-b border-gray-200 transition-colors group-hover:bg-transparent group-hover:border-white/20">
                   <h3 className="font-bold text-2xl text-center mb-2">Kojo X</h3>
-                  <p className="text-gray-500 text-center">جلسات خاصة (١ على ١)</p>
+                  <p className="text-gray-500 group-hover:text-white/90 text-center">جلسات خاصة (١ على ١)</p>
                 </div>
                 
                 <div className="p-6">
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
                       <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">4800 ج.م</span>
                     </div>
@@ -105,10 +96,6 @@ const PricingSection = () => {
                       <span className="font-bold text-lg">9000 ج.م</span>
                     </div>
                   </div>
-                  
-                  <Button className="w-full gradient-button">
-                    اشترك الآن
-                  </Button>
                 </div>
               </div>
             </div>
@@ -117,15 +104,15 @@ const PricingSection = () => {
           <TabsContent value="online" className="mt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               {/* Online Kojo Core */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
-                <div className="p-6 bg-gray-50 border-b border-gray-200">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transition-all duration-300 hover:bg-gradient-to-br hover:from-kojobot-blue hover:to-kojobot-purple hover:text-white group">
+                <div className="p-6 bg-gray-50 border-b border-gray-200 transition-colors group-hover:bg-transparent group-hover:border-white/20">
                   <h3 className="font-bold text-2xl text-center mb-2">Kojo Core</h3>
-                  <p className="text-gray-500 text-center">٢ إلى ٥ طلاب</p>
+                  <p className="text-gray-500 group-hover:text-white/90 text-center">١ إلى ٥ طلاب</p>
                 </div>
                 
                 <div className="p-6">
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
                       <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">950 ج.م</span>
                     </div>
@@ -134,23 +121,19 @@ const PricingSection = () => {
                       <span className="font-bold text-lg">2850 ج.م</span>
                     </div>
                   </div>
-                  
-                  <Button className="w-full gradient-button">
-                    اشترك الآن
-                  </Button>
                 </div>
               </div>
               
               {/* Online Kojo X */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transform md:scale-105 hover:shadow-xl transition-shadow">
-                <div className="p-6 bg-kojobot-gradient">
+              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 transform md:scale-105 transition-all duration-300 hover:bg-gradient-to-br hover:from-kojobot-blue hover:to-kojobot-purple hover:text-white group">
+                <div className="p-6 bg-kojobot-gradient transition-colors">
                   <h3 className="font-bold text-2xl text-white text-center mb-2">Kojo X</h3>
                   <p className="text-white text-center opacity-90">جلسات خاصة (١ على ١)</p>
                 </div>
                 
                 <div className="p-6">
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between items-center pb-4 border-b border-gray-100">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
                       <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">1633 ج.م</span>
                     </div>
@@ -159,10 +142,6 @@ const PricingSection = () => {
                       <span className="font-bold text-lg">4900 ج.م</span>
                     </div>
                   </div>
-                  
-                  <Button className="w-full gradient-button">
-                    اشترك الآن
-                  </Button>
                 </div>
               </div>
             </div>
