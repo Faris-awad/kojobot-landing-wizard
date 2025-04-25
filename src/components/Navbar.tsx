@@ -13,11 +13,12 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between py-4">
         <div className="flex items-center">
-          <div className="mr-4">
-            {/* Placeholder for logo */}
-            <div className="h-10 w-32 flex items-center justify-center font-bold text-xl">
-              <span className="gradient-text">Kojobot</span>
-            </div>
+          <div className="h-12">
+            <img 
+              src="/lovable-uploads/34e55d29-7798-46c5-ae4e-87cc79cebff6.png"
+              alt="Kojobot Logo"
+              className="h-full w-auto"
+            />
           </div>
         </div>
 
