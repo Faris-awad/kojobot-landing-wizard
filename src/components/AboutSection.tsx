@@ -1,19 +1,22 @@
 
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const AboutSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="bg-gray-50 py-16 md:py-24">
       <div className="container mx-auto px-4">
         <h2 className="section-title">
-          <span className="gradient-text">من نحن</span>
+          <span className="gradient-text">{t('about-title')}</span>
         </h2>
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg md:text-xl leading-relaxed mb-8">
-            <span className="font-bold gradient-text">كوجوبوت</span> هي أكاديمية رائدة في تعليم البرمجة للأطفال والشباب، بدأت رحلتها بهدف بناء جيل قادر على التعامل مع التكنولوجيا بثقة وإبداع.
+            <span className="font-bold gradient-text">Kojobot</span> {t('about-description-1')}
           </p>
           <p className="text-lg md:text-xl leading-relaxed">
-            نجمع بين التعلم الحضوري والتعلم عن بعد، مع منهجية تفاعلية تحول تعلم البرمجة إلى مغامرة ممتعة ومثيرة. طورنا مناهجنا بعناية لتناسب الفئات العمرية المختلفة من سن ٦ إلى ١٨ سنة، مع التركيز على تنمية مهارات التفكير المنطقي وحل المشكلات والإبداع.
+            {t('about-description-2')}
           </p>
         </div>
         
@@ -25,9 +28,9 @@ const AboutSection = () => {
                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">تعليم متخصص</h3>
+            <h3 className="text-xl font-bold mb-2 text-center">{t('specialized-education')}</h3>
             <p className="text-gray-600 text-center">
-              مناهج مصممة خصيصًا لكل فئة عمرية مع مسارات تعلم تتناسب مع اهتمامات وقدرات الطلاب المختلفة
+              {t('specialized-education-desc')}
             </p>
           </div>
           
@@ -39,9 +42,9 @@ const AboutSection = () => {
                 <path d="M2 12h20"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">مرونة في التعلم</h3>
+            <h3 className="text-xl font-bold mb-2 text-center">{t('flexible-learning')}</h3>
             <p className="text-gray-600 text-center">
-              خيارات متعددة للتعلم الحضوري أو عن بعد، مع مجموعات صغيرة أو جلسات فردية حسب احتياجات الطالب
+              {t('flexible-learning-desc')}
             </p>
           </div>
           
@@ -51,9 +54,9 @@ const AboutSection = () => {
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
               </svg>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">مدربون محترفون</h3>
+            <h3 className="text-xl font-bold mb-2 text-center">{t('professional-trainers')}</h3>
             <p className="text-gray-600 text-center">
-              فريق من المدربين ذوي الخبرة في مجال البرمجة والتعليم، قادرين على تبسيط المفاهيم المعقدة وإلهام الطلاب
+              {t('professional-trainers-desc')}
             </p>
           </div>
         </div>

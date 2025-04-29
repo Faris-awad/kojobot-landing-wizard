@@ -1,17 +1,20 @@
 
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const TracksSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="tracks" className="bg-gray-50 py-16 md:py-24">
       <div className="container mx-auto px-4">
         <h2 className="section-title">
-          <span className="gradient-text">مساراتنا التعليمية</span>
+          <span className="gradient-text">{t('tracks-title')}</span>
         </h2>
         
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-lg leading-relaxed">
-            نقدم مسارات تعليمية متنوعة تناسب مختلف الفئات العمرية والاهتمامات، كل مسار مصمم بعناية لتطوير مهارات محددة.
+            {t('tracks-description')}
           </p>
         </div>
         
@@ -19,11 +22,11 @@ const TracksSection = () => {
           {/* Software Track */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="h-16 bg-kojobot-purple flex items-center justify-center">
-              <h3 className="text-2xl font-bold text-white">مسار البرمجيات</h3>
+              <h3 className="text-2xl font-bold text-white">{t('software-track')}</h3>
             </div>
             <div className="p-6">
               <div className="mb-8">
-                <h4 className="font-bold text-lg mb-2 text-kojobot-purple">المرحلة التمهيدية</h4>
+                <h4 className="font-bold text-lg mb-2 text-kojobot-purple">{t('beginner-stage')}</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -41,7 +44,7 @@ const TracksSection = () => {
               </div>
               
               <div className="mb-8">
-                <h4 className="font-bold text-lg mb-2 text-kojobot-purple">المرحلة المتوسطة</h4>
+                <h4 className="font-bold text-lg mb-2 text-kojobot-purple">{t('intermediate-stage')}</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -59,7 +62,7 @@ const TracksSection = () => {
               </div>
               
               <div>
-                <h4 className="font-bold text-lg mb-2 text-kojobot-purple">المرحلة المتقدمة</h4>
+                <h4 className="font-bold text-lg mb-2 text-kojobot-purple">{t('advanced-stage')}</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -81,11 +84,11 @@ const TracksSection = () => {
           {/* Hardware Track */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <div className="h-16 bg-kojobot-blue flex items-center justify-center">
-              <h3 className="text-2xl font-bold text-white">مسار الإلكترونيات</h3>
+              <h3 className="text-2xl font-bold text-white">{t('hardware-track')}</h3>
             </div>
             <div className="p-6">
               <div className="mb-8">
-                <h4 className="font-bold text-lg mb-2 text-kojobot-blue">المرحلة التمهيدية</h4>
+                <h4 className="font-bold text-lg mb-2 text-kojobot-blue">{t('beginner-stage')}</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -103,7 +106,7 @@ const TracksSection = () => {
               </div>
               
               <div className="mb-8">
-                <h4 className="font-bold text-lg mb-2 text-kojobot-blue">المرحلة المتوسطة</h4>
+                <h4 className="font-bold text-lg mb-2 text-kojobot-blue">{t('intermediate-stage')}</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -121,7 +124,7 @@ const TracksSection = () => {
               </div>
               
               <div>
-                <h4 className="font-bold text-lg mb-2 text-kojobot-blue">المرحلة المتقدمة</h4>
+                <h4 className="font-bold text-lg mb-2 text-kojobot-blue">{t('advanced-stage')}</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
