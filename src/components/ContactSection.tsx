@@ -1,9 +1,22 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Facebook, Instagram, MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
+  useEffect(() => {
+    // Load the Typeform embed script
+    const script = document.createElement('script');
+    script.src = "//embed.typeform.com/next/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Clean up script when component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section id="contact" className="bg-gray-50 py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -15,6 +28,11 @@ const ContactSection = () => {
           <p className="text-lg leading-relaxed">
             نحن هنا للإجابة على جميع استفساراتك وتقديم المزيد من المعلومات حول برامجنا. يمكنك التواصل معنا عبر أي من القنوات التالية:
           </p>
+        </div>
+        
+        {/* Typeform Embed */}
+        <div className="mb-16">
+          <div data-tf-live="01JT1PGX3KGBKARHHKV2HK7T53"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
