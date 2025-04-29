@@ -1,29 +1,27 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const HeroSection = () => {
-  const { t } = useLanguage();
-
   return (
     <section className="bg-white py-16 md:py-24 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="md:w-1/2 text-center md:text-right space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              {t('hero-title')}
+              تعلم البرمجة بطريقة{' '}
+              <span className="gradient-text">ممتعة ومبتكرة</span>
             </h1>
             <p className="text-xl text-gray-600">
-              {t('hero-description')}
+              نقدم دورات متخصصة للأطفال والشباب من عمر ٦ إلى ١٨ سنة لبناء مهارات المستقبل الرقمي
             </p>
             <div className="flex justify-center md:justify-end space-x-4 rtl:space-x-reverse">
               <Button className="gradient-button rounded-full text-lg px-8 py-6">
-                {t('start-now')}
+                ابدأ الآن
               </Button>
               <a href="#curriculum">
                 <Button variant="outline" className="rounded-full text-lg px-8 py-6 border-2 border-kojobot-purple text-kojobot-purple hover:bg-kojobot-purple/10">
-                  {t('explore-curriculum')}
+                  تعرف على المنهج
                 </Button>
               </a>
             </div>

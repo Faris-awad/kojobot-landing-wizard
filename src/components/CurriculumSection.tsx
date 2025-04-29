@@ -1,35 +1,32 @@
 
 import React from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const CurriculumSection = () => {
-  const { t } = useLanguage();
-
   return (
     <section id="curriculum" className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-4">
         <h2 className="section-title">
-          <span className="gradient-text">{t('curriculum-title')}</span>
+          <span className="gradient-text">المنهج التعليمي</span>
         </h2>
         
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-lg leading-relaxed">
-            {t('curriculum-description')}
+            صممنا منهجنا التعليمي ليكون شاملًا ومتدرجًا، يبدأ بالمفاهيم الأساسية ثم ينتقل إلى المستويات المتقدمة حسب قدرات الطالب واهتماماته.
           </p>
         </div>
         
         <div className="space-y-20">
           {/* Foundation Stages */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-10">{t('foundation-stages')}</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-10">المراحل التأسيسية</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="bg-gray-50 p-8 rounded-lg shadow-md">
                 <div className="w-16 h-16 rounded-full bg-kojobot-gradient flex items-center justify-center mb-6 mx-auto">
                   <span className="text-white text-xl font-bold">1</span>
                 </div>
-                <h4 className="text-xl font-bold mb-4 text-center">{t('computer-basics')}</h4>
+                <h4 className="text-xl font-bold mb-4 text-center">أساسيات الكمبيوتر</h4>
                 <p className="text-gray-600">
-                  {t('computer-basics-desc')}
+                  تعرف على مكونات الكمبيوتر وكيفية عمله، تعلم مهارات استخدام لوحة المفاتيح والماوس، واكتشف أساسيات التعامل مع نظم التشغيل والملفات.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
                   <span className="px-3 py-1 bg-kojobot-purple/10 text-kojobot-purple rounded-full text-sm">مهارات استخدام الكمبيوتر</span>
@@ -42,9 +39,9 @@ const CurriculumSection = () => {
                 <div className="w-16 h-16 rounded-full bg-kojobot-gradient flex items-center justify-center mb-6 mx-auto">
                   <span className="text-white text-xl font-bold">2</span>
                 </div>
-                <h4 className="text-xl font-bold mb-4 text-center">{t('intro-programming')}</h4>
+                <h4 className="text-xl font-bold mb-4 text-center">مقدمة في البرمجة</h4>
                 <p className="text-gray-600">
-                  {t('intro-programming-desc')}
+                  اكتشف مفاهيم البرمجة الأساسية من خلال البرمجة المرئية، تعلم التفكير المنطقي وحل المشكلات، وطور مهارات التفكير الحسابي.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 justify-center">
                   <span className="px-3 py-1 bg-kojobot-purple/10 text-kojobot-purple rounded-full text-sm">البرمجة المرئية</span>
@@ -57,16 +54,16 @@ const CurriculumSection = () => {
           
           {/* Advanced Stages Journey */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-6">{t('advanced-journey')}</h3>
-            <p className="text-center text-lg mb-10">{t('after-foundation')}</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-6">رحلة التعلم المتقدمة</h3>
+            <p className="text-center text-lg mb-10">بعد إتمام المراحل التأسيسية، يمكن للطالب اختيار أحد المسارين:</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <div className="border-2 border-kojobot-purple/30 p-8 rounded-lg relative">
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-4">
-                  <h4 className="text-xl font-bold text-kojobot-purple">{t('software-track')}</h4>
+                  <h4 className="text-xl font-bold text-kojobot-purple">مسار البرمجيات</h4>
                 </div>
                 <p className="text-gray-600 mb-6 text-center">
-                  {t('software-track-desc')}
+                  مسار متقدم يركز على تطوير مهارات البرمجة وإنشاء التطبيقات والمواقع الإلكترونية
                 </p>
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-start">
@@ -90,10 +87,10 @@ const CurriculumSection = () => {
               
               <div className="border-2 border-kojobot-blue/30 p-8 rounded-lg relative">
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-4">
-                  <h4 className="text-xl font-bold text-kojobot-blue">{t('hardware-track')}</h4>
+                  <h4 className="text-xl font-bold text-kojobot-blue">مسار الإلكترونيات</h4>
                 </div>
                 <p className="text-gray-600 mb-6 text-center">
-                  {t('hardware-track-desc')}
+                  مسار متقدم يركز على تطوير مهارات الإلكترونيات والروبوتات والتحكم في الأجهزة
                 </p>
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-start">
