@@ -30,17 +30,9 @@ const ContactSection = () => {
           </p>
         </div>
         
-        {/* Typeform Embed - Side tab format */}
+        {/* Typeform Embed */}
         <div className="mb-16">
-          <div 
-            data-tf-sidetab="01JT1RZF6S4XH4K4HCE8YCX5CD" 
-            data-tf-opacity="100" 
-            data-tf-iframe-props="title=نموذج التسجيل" 
-            data-tf-button-color="#6455F0" 
-            data-tf-button-text="سجّل الآن"
-            data-tf-medium="snippet" 
-            style={{ all: 'unset' }}
-          ></div>
+          <div data-tf-live="01JT1RZF6S4XH4K4HCE8YCX5CD"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
