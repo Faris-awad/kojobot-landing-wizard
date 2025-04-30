@@ -65,21 +65,21 @@ const CurriculumSection = () => {
                 <p className="text-gray-600 mb-6 text-center">
                   مسار متقدم يركز على تطوير مهارات البرمجة وإنشاء التطبيقات والمواقع الإلكترونية
                 </p>
-                <ul className="space-y-4 text-gray-600">
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
+                <ul className="space-y-4 text-gray-600 text-right">
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
                     <span>حل المشكلات المعقدة باستخدام الخوارزميات</span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
                     <span>تعلم لغات البرمجة مثل Python و JavaScript</span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
                     <span>تصميم وتطوير مواقع الويب والتطبيقات</span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-purple"></div>
                     <span>علوم البيانات والذكاء الاصطناعي للمتقدمين</span>
                   </li>
                 </ul>
@@ -92,21 +92,21 @@ const CurriculumSection = () => {
                 <p className="text-gray-600 mb-6 text-center">
                   مسار متقدم يركز على تطوير مهارات الإلكترونيات والروبوتات والتحكم في الأجهزة
                 </p>
-                <ul className="space-y-4 text-gray-600">
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
+                <ul className="space-y-4 text-gray-600 text-right">
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
                     <span>مبادئ الإلكترونيات والدوائر الكهربائية</span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
                     <span>برمجة المتحكمات الدقيقة مثل Arduino</span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
                     <span>تصميم وبناء الروبوتات والأجهزة الذكية</span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="mr-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
+                  <li className="flex items-start flex-row-reverse">
+                    <div className="ml-3 mt-1 h-4 w-4 rounded-full bg-kojobot-blue"></div>
                     <span>إنترنت الأشياء (IoT) وتطبيقاتها</span>
                   </li>
                 </ul>
