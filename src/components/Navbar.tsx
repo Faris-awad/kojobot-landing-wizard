@@ -12,7 +12,8 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between py-4">
-        <div className="flex items-center">
+        {/* Logo moved to the right side */}
+        <div className="md:order-2">
           <div className="h-12">
             <img 
               src="/lovable-uploads/34e55d29-7798-46c5-ae4e-87cc79cebff6.png"
@@ -22,8 +23,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        {/* Desktop Navigation - now on the left */}
+        <nav className="hidden md:flex space-x-8 md:order-1">
           <a href="#about" className="text-gray-700 hover:text-kojobot-purple transition-colors">
             من نحن
           </a>
@@ -41,8 +42,8 @@ const Navbar = () => {
           </a>
         </nav>
 
-        {/* Mobile menu button */}
-        <button className="md:hidden" onClick={toggleMenu}>
+        {/* Mobile menu button - now on the left */}
+        <button className="md:hidden md:order-1" onClick={toggleMenu}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
           </svg>
