@@ -4,6 +4,7 @@ import { Facebook, Instagram, MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
+
   useEffect(() => {
     // Load the Typeform embed script
     const script = document.createElement('script');
@@ -31,8 +32,12 @@ const ContactSection = () => {
         </div>
         
         {/* Typeform Embed */}
+
         <div className="mb-16">
-          <div data-tf-live="01JT1RZF6S4XH4K4HCE8YCX5CD"></div>
+          <div data-tf-live="01JT1RZF6S4XH4K4HCE8YCX5CD">
+
+
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
