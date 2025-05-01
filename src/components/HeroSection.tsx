@@ -16,14 +16,21 @@ const HeroSection = () => {
               نقدم دورات متخصصة للأطفال والشباب من عمر ٦ إلى ١٨ سنة لبناء مهارات المستقبل الرقمي
             </p>
             <div className="flex justify-center md:justify-end space-x-4 rtl:space-x-reverse">
-              <Button className="gradient-button rounded-full text-lg px-8 py-6">
+              {/* <Button className="gradient-button rounded-full text-lg px-8 py-6">
                 ابدأ الآن
-              </Button>
-              <a href="#curriculum">
-                <Button variant="outline" className="rounded-full text-lg px-8 py-6 border-2 border-kojobot-purple text-kojobot-purple hover:bg-kojobot-purple/10">
-                  تعرف على المنهج
-                </Button>
-              </a>
+              </Button> */}
+              <a
+  href="#curriculum"
+  className="text-inherit hover:!text-inherit"
+>
+  <Button
+    variant="outline"
+    className="gradient-button rounded-full text-lg px-8 py-6"
+  >
+    تعرف على المنهج
+  </Button>
+</a>
+
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-start">
