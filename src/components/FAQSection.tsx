@@ -77,7 +77,7 @@ const FAQSection = () => {
           </div>
         </div>
         
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto" dir="rtl">
           <Accordion type="single" collapsible className="text-right">
             {questions.map((q, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200">
