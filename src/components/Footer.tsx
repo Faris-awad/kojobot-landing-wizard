@@ -45,7 +45,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <span className="mr-2">•</span>
-                <span>العنوان: القاهرة، مصر</span>
+                <span>العنوان: الالمنصوره</span>
               </li>
             </ul>
           </div>
