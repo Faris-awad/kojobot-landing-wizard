@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-gray-50 py-16 md:py-24">
+    <section id="about" className="bg-gray-50 py-16 md:py-24 aaaaaa">
       <div className="container mx-auto px-4">
         <h2 className="section-title">
           <span className="gradient-text">من نحن</span>
