@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -38,16 +39,16 @@ const PricingSection = () => {
                 <div className="p-6">
                   <div className="space-y-4">
                     <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
-                      <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">1700 ج.م</span>
+                      <span className="font-medium">شهر واحد</span>
                     </div>
                     <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
-                      <span className="font-medium">٣ شهور</span>
                       <span className="font-bold text-lg">3750 ج.م</span>
+                      <span className="font-medium">٣ شهور</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">٦ شهور</span>
                       <span className="font-bold text-lg">6600 ج.م</span>
+                      <span className="font-medium">٦ شهور</span>
                     </div>
                   </div>
                 </div>
@@ -63,16 +64,16 @@ const PricingSection = () => {
                 <div className="p-6">
                   <div className="space-y-4">
                     <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
-                      <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">3400 ج.م</span>
+                      <span className="font-medium">شهر واحد</span>
                     </div>
                     <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
-                      <span className="font-medium">٣ شهور</span>
                       <span className="font-bold text-lg">7500 ج.م</span>
+                      <span className="font-medium">٣ شهور</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">٦ شهور</span>
                       <span className="font-bold text-lg">14600 ج.م</span>
+                      <span className="font-medium">٦ شهور</span>
                     </div>
                   </div>
                 </div>
@@ -88,12 +89,12 @@ const PricingSection = () => {
                 <div className="p-6">
                   <div className="space-y-4">
                     <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
-                      <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">4800 ج.م</span>
+                      <span className="font-medium">شهر واحد</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">٣ شهور</span>
                       <span className="font-bold text-lg">9000 ج.م</span>
+                      <span className="font-medium">٣ شهور</span>
                     </div>
                   </div>
                 </div>
@@ -113,12 +114,12 @@ const PricingSection = () => {
                 <div className="p-6">
                   <div className="space-y-4">
                     <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
-                      <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">950 ج.م</span>
+                      <span className="font-medium">شهر واحد</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">٣ شهور</span>
                       <span className="font-bold text-lg">2850 ج.م</span>
+                      <span className="font-medium">٣ شهور</span>
                     </div>
                   </div>
                 </div>
@@ -134,12 +135,12 @@ const PricingSection = () => {
                 <div className="p-6">
                   <div className="space-y-4">
                     <div className="flex justify-between items-center pb-4 border-b border-gray-100 group-hover:border-white/20">
-                      <span className="font-medium">شهر واحد</span>
                       <span className="font-bold text-lg">1633 ج.م</span>
+                      <span className="font-medium">شهر واحد</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="font-medium">٣ شهور</span>
                       <span className="font-bold text-lg">4900 ج.م</span>
+                      <span className="font-medium">٣ شهور</span>
                     </div>
                   </div>
                 </div>
